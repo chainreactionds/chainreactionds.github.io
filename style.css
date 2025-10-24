@@ -1,19 +1,35 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --card-bg: white;
+  --accent: #007acc;
+  --accent2: #ff8c00;
+}
+
+/* 🌙 Dark mode automatica */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #ddd;
+    --card-bg: #1e1e1e;
+    --accent: #5db2ff;
+    --accent2: #ffa94d;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-  background: linear-gradient(90deg, #007acc, #005fa3);
+  background: linear-gradient(90deg, var(--accent), #005fa3);
   color: white;
   text-align: center;
   padding: 3rem 1rem;
-}
-
-header h1 {
-  margin-bottom: 0.5rem;
 }
 
 main {
@@ -23,21 +39,22 @@ main {
 }
 
 section {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   padding: 2rem;
   margin-bottom: 2rem;
+  transition: background 0.3s;
 }
 
 h2 {
-  color: #007acc;
-  border-left: 5px solid #ff8c00;
+  color: var(--accent);
+  border-left: 5px solid var(--accent2);
   padding-left: 0.5rem;
 }
 
 a {
-  color: #007acc;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -48,6 +65,19 @@ a:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #eee;
+  background-color: var(--card-bg);
   font-size: 0.9rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Cards dei progetti */
+.project-card {
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid var(--accent);
+}
+.project-card a {
+  font-weight: 600;
 }
