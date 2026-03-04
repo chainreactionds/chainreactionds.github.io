@@ -47,11 +47,11 @@ header {
 }
 
 .tableauPlaceholder {
-  overflow: hidden;
+  overflow: clip;
 }
 
 .tableauPlaceholder iframe {
-  overflow: hidden !important;
+  overflow: clip !important;
 }
 
 .nav-links a {
