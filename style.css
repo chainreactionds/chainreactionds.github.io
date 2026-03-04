@@ -148,5 +148,10 @@ footer {
 .tableauPlaceholder {
   overflow: hidden;
 }
+
+.tableau-wrapper {
+  height: 900px;        /* altezza desiderata */
+  overflow: hidden;     /* nasconde la scrollbar */
+}
   
 }
