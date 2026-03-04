@@ -144,4 +144,9 @@ footer {
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
+
+.tableauPlaceholder {
+  overflow: hidden;
+}
+  
 }
