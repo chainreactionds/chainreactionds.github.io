@@ -46,6 +46,14 @@ header {
   color: var(--accent);
 }
 
+.tableauPlaceholder {
+  overflow: hidden;
+}
+
+.tableauPlaceholder iframe {
+  overflow: hidden !important;
+}
+
 .nav-links a {
   margin-left: 2rem;
   color: var(--text);
@@ -144,10 +152,6 @@ footer {
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
-
-.tableauPlaceholder {
-  overflow: hidden;
-}
 
 .tableau-wrapper {
   height: 900px;        /* altezza desiderata */
